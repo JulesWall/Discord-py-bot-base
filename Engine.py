@@ -11,7 +11,7 @@ class Engine():
         self.bot = bot
     
     async def run(self):
-        has_prefix = self.message.content.startswith("!")
+        has_prefix = self.message.content.startswith(PREFIX)
         if has_prefix:
             if is_maintenance and self.message.author.id not in MAINTENANCE_AUTHORIZE: return "break"
             elif self.message.guild.id in SERVER_WHITELISTED:
