@@ -1,0 +1,15 @@
+OWNER = []
+OP = []
+
+USERDATABASE = ""
+PASSWORDDATABASE = ""
+DATABASE = ""
+EMBEDFOOTERS = ''
+
+PREFIX = ''
+
+is_maintenance = False
+MAINTENANCE_AUTHORIZE = []
+SERVER_WHITELISTED = []
+
+TOKEN = ''

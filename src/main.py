@@ -1,5 +1,5 @@
 import discord
-from Engine import *
+from Discord.MessageManager import *
 from config import *
 
 client = discord.Client()
@@ -12,6 +12,6 @@ async def on_ready():
 async def on_message_edit(before, after): await on_message(after)   
     
 @client.event
-async def on_message(message): await Engine(message, client).run()
+async def on_message(message): await MessageManager(message, client).manage()
 
 client.run(TOKEN)
